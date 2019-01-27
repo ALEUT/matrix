@@ -1,18 +1,10 @@
 package matrix.validation;
 
+import matrix.model.Matrix;
+
 public class MatrixValidator {
 
-    public boolean isValid(int[][] matrix, int size) {
-        if (matrix.length != size) {
-            return false;
-        }
-
-        for (int[] row : matrix) {
-            if (row.length != size) {
-                return false;
-            }
-        }
-
-        return true;
+    public boolean isValidSquareMatrix(Matrix matrix, int size) {
+        return matrix.getRowsCount() == size && matrix.getColumnsCount() == size;
     }
 }

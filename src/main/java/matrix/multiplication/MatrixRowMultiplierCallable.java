@@ -4,8 +4,8 @@ import java.util.concurrent.Callable;
 
 public class MatrixRowMultiplierCallable implements Callable<int[]> {
 
-    private int[] matrix1row;
-    private int[][] matrix2;
+    private final int[] matrix1row;
+    private final int[][] matrix2;
 
     public MatrixRowMultiplierCallable(int[] matrix1row, int[][] matrix2) {
         this.matrix1row = matrix1row;

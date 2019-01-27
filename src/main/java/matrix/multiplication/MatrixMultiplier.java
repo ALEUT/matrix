@@ -8,7 +8,7 @@ import java.util.concurrent.*;
 
 public class MatrixMultiplier {
 
-    private MatrixValidator matrixValidator = new MatrixValidator();
+    private final MatrixValidator matrixValidator = new MatrixValidator();
 
     public int[][] multiply(int[][] matrix1, int[][] matrix2) throws InterruptedException, ExecutionException {
         int matrixSize = matrix1.length;

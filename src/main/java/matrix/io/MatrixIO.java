@@ -10,7 +10,7 @@ import static com.fasterxml.jackson.databind.SerializationFeature.INDENT_OUTPUT;
 
 public class MatrixIO {
 
-    private ObjectMapper objectMapper = new ObjectMapper()
+    private final ObjectMapper objectMapper = new ObjectMapper()
             .enable(INDENT_OUTPUT);
 
     public int[][] readFromJSON(File file) throws IOException {
